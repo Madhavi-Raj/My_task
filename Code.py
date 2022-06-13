@@ -64,5 +64,7 @@ for i in d:
                 table.add_row(h[0],h[1],"","","")
                 table.add_empty_row()
             table.add_hline()
+    doc.append(NoEscape(r'\vspace{2mm}'))
+    doc.append('\nEnd Date:______________________')
     doc.append(NewPage())
 doc.generate_pdf('finalsh3', clean_tex=False)
